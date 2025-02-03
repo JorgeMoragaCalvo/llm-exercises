@@ -11,7 +11,7 @@ st.write("Example chatbot")
 model = ChatOllama(model="deepseek-r1:1.5b", base_url="http://localhost:11434/")
 
 system_message = SystemMessagePromptTemplate.from_template(
-    "You are a helpful AI Assistant. Yoy work as teacher for 5th grade students. You explain things in short and brief."
+    "You are a helpful AI Assistant. You work as teacher for 5th grade students. You explain things in short and brief."
 )
 
 if "chat_history" not in st.session_state:
