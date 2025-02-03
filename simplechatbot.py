@@ -1,8 +1,7 @@
 import streamlit as st
 from langchain_ollama import ChatOllama
 
-st.title("🧠 This a Simple Chat Application with Ollama/DeeSeek and Langchain!")
-#st.write("GET MORE INFO @ KGP Talkie: https://www.youtube.com/kgptalkie")
+st.title("🧠 This a Simple Chat Application with Ollama/DeepSeek and Langchain!")
 
 with st.form("llm-form"):
     text = st.text_area("Enter your question:")
