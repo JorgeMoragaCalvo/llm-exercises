@@ -3,3 +3,4 @@ lib/
 Script/
 share/
 .pyvenv.cfg
+.venv/
