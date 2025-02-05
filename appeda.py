@@ -41,3 +41,8 @@ if st.session_state.clicked[1]:
 with st.sidebar:
     with st.expander('What are the steps of EDA'):
         st.write(llm('What are the steps of EDA'))
+
+pandas_agent = create_pandas_dataframe_agent(llm, df, verbose=True)
+question = 'What is the meaning of the columns'
+columns_meaning = pandas_agent.run(question)
+st.write(columns_meaning)

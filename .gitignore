@@ -4,3 +4,4 @@ Script/
 share/
 .pyvenv.cfg
 .venv/
+.env
