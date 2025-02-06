@@ -1,5 +1,7 @@
 ### Setting up LangSmith for tracing
+
 - Within `.env` file:
+
 ```bash
 LANGCHAIN_API_KEY="YOUR_LANGSMITH_API_KEY"
 LANGCHAIN_TRACING="true"
