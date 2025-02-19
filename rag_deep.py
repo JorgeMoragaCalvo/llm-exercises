@@ -67,18 +67,18 @@ LANGUAGE_MODEL = OllamaLLM(model="llama3.2:latest")
 
 def save_uploaded_file(uploaded_file):
     file_path = PDF_STORE_PATH + uploaded_file.name
-    with open(file_path, "wb") as file:
-        file.write(uploaded_file.getbuffer())
+    with open(file_path, "wb") as file: # opens file and assign it to `file` variable
+        file.write(uploaded_file.getbuffer()) # writes in memory the `file`
     return file_path
 
 def load_pdf_documents(file_path):
     document_loader = PDFPlumberLoader(file_path)
-    return document_loader.load()
+    return document_loader.load() # return an object
 
 def chunk_documents(raw_documents):
     text_processor = RecursiveCharacterTextSplitter(
-        chunk_size = 100,
-        chunk_overlap=10,
+        chunk_size = 500,
+        chunk_overlap=50,
         add_start_index=True
     )
     return text_processor.split_documents(raw_documents)

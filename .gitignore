@@ -6,3 +6,5 @@ share/
 .venv/
 .env
 document_store/pdfs/
+chat_history.db
+operations_research/
